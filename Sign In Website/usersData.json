@@ -1,0 +1,32 @@
+{
+  "userAccount": [
+    {
+      "id": "10c22972-fe6a-4da9-b63a-534abcae1600",
+      "userName": "w",
+      "passWord": "w",
+      "roleAdmin": "admin",
+      "role": "w"
+    },
+    {
+      "id": "b0d34955-cdcb-4193-8027-c7f27e244778",
+      "userName": "w",
+      "passWord": "w",
+      "roleAdmin": "admin",
+      "role": "w"
+    },
+    {
+      "id": "94e5e232-cb46-40f1-8e05-acedc8e4062a",
+      "userName": "dror",
+      "passWord": "1234",
+      "roleAdmin": "",
+      "role": ""
+    },
+    {
+      "id": "db855b32-75b1-455d-9c31-4f0627b50a54",
+      "userName": "dror",
+      "passWord": "1234",
+      "roleAdmin": "",
+      "role": "crisatl"
+    }
+  ]
+}

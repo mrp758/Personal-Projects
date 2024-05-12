@@ -1,0 +1,377 @@
+[
+  {
+    "id": 1,
+    "name": "",
+    "Role": "",
+    "RealName": "",
+    "Description": "",
+    "Image": "../Images/batmanArkhamAsylum.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Batman",
+    "Role": "Hero",
+    "isVisible": true,
+    "RealName": "Bruce",
+    "Description": "Known as Batman",
+    "Image": "../Images/BatmanArkhamCityBatman.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Bruce",
+    "lastName": "Wayne",
+    "Role": "Civilian",
+    "isVisible": true,
+    "RealName": "Bruce",
+    "Description": "Play boy billioner",
+    "Image": "../Images/BatmanArkhamCityBruceWayne.jpg"
+  },
+  {
+    "id": 4,
+    "name": "Robin",
+    "lastName": "Drake",
+    "Role": "Hero",
+    "isVisible": true,
+    "RealName": "Tim",
+    "Description": "The third Robin after Json Todd death",
+    "Image": "../Images/BatmanArkhamCityRobin.jpg"
+  },
+  {
+    "id": 5,
+    "name": "Poison Ivy",
+    "lastName": "Isily",
+    "Role": "Villain",
+    "isVisible": true,
+    "RealName": "Pamala",
+    "Description": "Pamla Isily was a former doctor",
+    "Image": "../Images/BatmanArkhamCityPoisonIvy.jpg"
+  },
+  {
+    "id": 6,
+    "name": "CatWoman",
+    "lastName": "Caliy",
+    "Role": "Hero/Villian",
+    "isVisible": true,
+    "RealName": "Selina",
+    "Description": "A theft that some times play as the hero and some times as the villian",
+    "Image": "../Images/BatmanArkhamCityCatWoman.jpg"
+  },
+  {
+    "id": 7,
+    "name": "NightWing",
+    "lastName": "Grayson",
+    "Role": "Villain",
+    "isVisible": true,
+    "RealName": "Dick",
+    "Description": "The first robin to be under the batwing",
+    "Image": "../Images/BatmanArkhamCityNightWing.png"
+  },
+  {
+    "id": 8,
+    "name": "Joker",
+    "lastName": "Unknown",
+    "Role": "Villain",
+    "isVisible": true,
+    "RealName": "Unknown",
+    "Description": "Background story of this villian isn't fully proven,All we know that he was the redhood in some point",
+    "Image": "../Images/BatmanArkhamCityJoker.jpg"
+  },
+  {
+    "id": 9,
+    "name": "ClayFace",
+    "lastName": "Karlo",
+    "Role": "Villian",
+    "isVisible": true,
+    "RealName": "Basil",
+    "Description": "Actor who got involved with the mafia and took the name ClayFace after his exposure to a chemical that turn his all body into clay",
+    "Image": "../Images/BatmanArkhamCityClayFace.jpg"
+  },
+  {
+    "id": 10,
+    "name": "Hugo Strange",
+    "lastName": "Strange",
+    "Role": "Villian",
+    "isVisible": true,
+    "RealName": "Hugo",
+    "Description": "Proffesor that is obsessed with the identity of the batman",
+    "Image": "../Images/BatmanArkhamCityHugoStrange.jpg"
+  },
+  {
+    "id": 11,
+    "name": "Two Face",
+    "lastName": "Dent",
+    "Role": "Villain",
+    "isVisible": true,
+    "RealName": "Harvey",
+    "Description": "Famous district attorney of gotham city,After unfortunate acid exposure to the face had left Harvey severely disfiguring it on the left side and had a mental breakdown that made him Two Face",
+    "Image": "../Images/BatmanArkhamCityTwoFace.jpg"
+  },
+  {
+    "id": 12,
+    "name": "Riddler",
+    "lastName": "Nashton",
+    "Role": "Villain",
+    "isVisible": true,
+    "RealName": "Edward",
+    "Description": "One of the Dark Knight's most infamous villains, Edward Nygma enjoys flaunting his intellectual superiority by conducting crimes and leaving clues for Batman to piece together",
+    "Image": "../Images/BatmanArkhamCityRiddler.jpg"
+  },
+  {
+    "id": 13,
+    "name": "Penguin",
+    "lastName": "Cobblepot",
+    "Role": "Villian",
+    "isVisible": true,
+    "RealName": "Oswald Chesterfield",
+    "Description": "Penguin is a Gotham City supervillain and an enemy of Batman",
+    "Image": "../Images/BatmanArkhamCityPenguin.jpg"
+  },
+  {
+    "id": 14,
+    "name": "Bane",
+    "lastName": "Unknown",
+    "Role": "Villian",
+    "isVisible": true,
+    "RealName": "Unknown",
+    "Description": "Bane is an escaped convict from an island prison in South America and a super-villain/assassin. Bane has abnormal physical strength as a result of having undergone experiments involving a derivative of the drug Venom.Become Bane",
+    "Image": "../Images/BatmanArkhamCityBane.jpg"
+  },
+  {
+    "id": 15,
+    "name": "Talia",
+    "lastName": "Al Ghul",
+    "RealName": "Talia",
+    "Role": "Villian",
+    "isVisible": true,
+    "Description": "Talia is an assassin trained by her fater Ras Al Ghul,While Bruce trained to become Batman he meet her and she become the most important thing to Bruce as him to her",
+    "Image": "../Images/BatmanArkhamCityTalia.jpg"
+  },
+  {
+    "id": 16,
+    "name": "Ras",
+    "lastName": "Al Ghul",
+    "RealName": "Unknown",
+    "Role": "Villian",
+    "isVisible": true,
+    "Description": "Ras Al Ghul is the last mentor to Bruce on his traning years and also the leader of an assassin group called: The League Of Shadows",
+    "Image": "../Images/BatmanArkhamCityRasAlGhul.jpg"
+  },
+  {
+    "id": 17,
+    "name": "Oracle",
+    "lastName": "Gorodn",
+    "Role": "Hero",
+    "isVisible": true,
+    "RealName": "Barbra Drake",
+    "Description": "Barbara Gordon-Drake is the daughter of Gotham City's Police Commissioner James Gordon, and was forbidden by her overprotective father from joining the GCPD. Instead, she took on the identity of Batgirl and was a crime-fighting partner of Batman's for years. But that all ended when the Joker shot her through the spine.",
+    "Image": "../Images/BatmanArkhamCityOracle.jpg"
+  },
+  {
+    "id": 18,
+    "name": "Gordon",
+    "lastName": "Jim",
+    "RealName": "James Worthington Gordon",
+    "Role": "Hero",
+    "isVisible": true,
+    "Description": "Police Commissioner James Gordon dedicated his career to cleaning up the corruption in the Gotham City Police Department, a goal he came a long way toward accomplishing. Gordon was equally tough on crime, and in the pursuit of making Gotham City safe for all its citizens, he forged an uneasy alliance with Gotham's other top crime fighter, the mysterious vigilante known as Batman.",
+    "Image": "../Images/BatmanArkhamCityJamesGordon.png"
+  },
+  {
+    "id": 19,
+    "name": "Harley",
+    "lastName": "Quinzel",
+    "RealName": "Harleen Frances",
+    "Role": "Villian",
+    "isVisible": true,
+    "Description": "An Arkham Asylum psychiatrist, who begged and eventually convinced her superiors to treat The Joker, Dr. Harleen Quinzel became obsessively fixated on her patient, and believed herself to be in love with him. She helped him escape from confinement and took on her own criminal identity as Harley Quinn. Quinn was a violent and unpredictable felon whose only motivation, beyond general mayhem, was achieving the Jokers approval. Because of the Joker's cruel and mercurial nature, this in some ways made Quinn just another one of his victims - albeit a very dangerous one.",
+    "Image": "../Images/BatmanArkhamCityHarelyQuinn.jpg"
+  },
+  {
+    "id": 20,
+    "name": "MadHatter",
+    "lastName": "Tetch",
+    "RealName": "Jervis Tetch",
+    "Role": "Villian",
+    "isVisible": true,
+    "Description": "Obsessed from a young age with Lewis Carroll's book Alice's Adventures in Wonderland, Jervis Tetch, an expert hypnotist, embraced a delusion that he was the incarnation of a character in the story, The Mad Hatter.",
+    "Image": "../Images/BatmanArkhamCityMadHatter.jpg"
+  },
+  {
+    "id": 21,
+    "name": "Killer Croc",
+    "lastName": "Jones",
+    "RealName": "Waylon Jones",
+    "Role": "Villian",
+    "isVisible": true,
+    "Description": "Abandoned to his abusive and alcoholic aunt and bullied his entire life due to his appearance -- the result of a genetic disorder he was born with -- Waylon Jones embraced his animal instincts and violently murdered and devoured his aunt after he finally reached his breaking point. Joining a traveling circus and adopting the stage name of Killer Croc, Jones bonded with his fellow carnival workers and felt like he had a family for the first time.",
+    "Image": "../Images/BatmanArkhamCityKillerCroc.jpg"
+  },
+  {
+    "id": 22,
+    "name": "Alfred",
+    "lastName": "Pennyworth",
+    "RealName": "Alfred Thaddeus Crane",
+    "Role": "Civilian",
+    "isVisible": true,
+    "Description": "Alfred Pennyworth, after a varied career, was employed as the Wayne family's butler when Bruce Wayne's parents were killed. Alfred raised the young orphan and reluctantly aided him in his quest to become Batman.",
+    "Image": "../Images/BatmanArkhamCityAlfred.jpg"
+  },
+  {
+    "id": 23,
+    "name": "Zsasz",
+    "lastName": "Victor",
+    "RealName": "Victor Zsasz",
+    "Role": "Villian",
+    "isVisible": true,
+    "Description": "A true sociopath, Victor Zsasz grew up in a life of ease, but nonetheless became a serial killer. Indiscriminate in his prey, body count was the only thing that mattered to Zsasz. He took pleasure in arranging the corpses of his victims in life-like poses before carving a mark for each of his victims into his own body. He saved a special spot for Batman. Above all else, Zsasz represented what Batman hated most pure, unadulterated and remorseless evil.",
+    "Image": "../Images/BatmanArkhamCityZsasz.jpg"
+  },
+  {
+    "id": 24,
+    "name": "Scare Crow",
+    "lastName": "Crane",
+    "RealName": "Jonathan Crane",
+    "Role": "Villian",
+    "isVisible": true,
+    "Description": "Taunted and bullied in his youth, Jonathan Crane he vowed to overcome his fears through the study of psychology and biochemistry on phobias and the nature of fear. Kicked out of the university he taught at for experimenting on human subjects, Crane adopted the identity of the Scarecrow, and armed himself with a specialized fear-inducing gas that makes a person's deepest phobia become a frightening reality.",
+    "Image": "../Images/BatmanArkhamCityScareCrow.png"
+  },
+  {
+    "id": 25,
+    "name": "Batman Armored Suit",
+    "lastName": "Wayne",
+    "RealName": "Bruce",
+    "Role": "Hero",
+    "isVisible": true,
+    "Description": "A suit that Batman has upgraded it from the events of blackgate prison",
+    "Image": "../Images/BatmanArkhamAsylumArmoredSuit.jpg"
+  },
+  {
+    "id": 26,
+    "name": "Prometheus",
+    "lastName": "Unknown",
+    "RealName": "Unknown",
+    "Role": "Villain",
+    "isVisible": true,
+    "Description": "A dark reflection of Batman, Prometheus was raised by criminal parents, who were gunned down by policemen right in front of him. Dedicating his life to destroying the law, Prometheus traveled the world and trained in the ways of murder. Clad in an armored suit that maximizes his natural skills, he is a master assassin whose physical and mental abilities rival Batman's own.",
+    "Image": "../Images/BatmanArkhamAsylumPrometheus.jpg"
+  },
+  {
+    "id": 27,
+    "name": "Red Hood",
+    "lastName": "Peter",
+    "RealName": "Jason Todd",
+    "Role": "Hero/Villian",
+    "isVisible": true,
+    "Description": "Jason Todd was a street orphan until he met Batman after he had saved him from The Joker. Jason was trained by Batman and later became the second Robin, but he was beaten and tortured by the Joker, who sent Batman a video of the event and lied by telling him that Jason was dead. Batman fell into a deep depression over Jason's death. Years later, Jason returned, sought revenge against Batman, and utilized advanced technology and resources that he had acquired by pooled resources from his enemies. He was able to develop high-tech equipment & trained a battalion of soldiers. He even designed a high-tech Batsuit with capabilities as well as utilize lethal gadgetry and weapons during combat situations. Jason created the identity of the Arkham Knight, until his redemption and forgiveness at the hands of Batman. After he finally aided Batman against Scarecrow, Jason took up the title of the Red Hood, a name that was used by the Joker prior to his transformation.",
+    "Image": "../Images/BatmanArkhamKightJsonTodd.jpg"
+  },
+  {
+    "id": 28,
+    "name": "Dead Shot",
+    "lastName": "Lawton",
+    "RealName": "Floyd Lawton",
+    "Role": "Villian",
+    "isVisible": true,
+    "Description": "Floyd Lawton, better known as Deadshot, is a mercenary and an old enemy of Batman. A 200 lb, 6'1 Caucasian male, he was considered to be the world's deadliest assassin (possibly behind Deathstroke) and never missed a shot, especially with his pair of silenced, wrist-mounted 9mm cannons. Deadshot disdained himself almost as much as his targets. Several prison psychologists had diagnosed him with suicidal tendencies.Prior to his encounter with Batman, Deadshot had six counts of murder of the first degree, including the assassination of a government official, was potentially suffering from clinical depression, and was 27 at the time when he first encountered Batman.",
+    "Image": "../Images/BatmanArkhamCityDeadShot.jpg"
+  },
+  {
+    "id": 29,
+    "name": "Death Stroke",
+    "lastName": "Joseph",
+    "RealName": "Slade Joseph Wilson",
+    "Role": "Villian",
+    "isVisible": true,
+    "Description": "Originally a soldier in the U.S. Army during the Vietnam War, Slade Wilson was part of an experimental super-soldier program where he gained enhanced strength, agility, healing factor and intelligence. Deathstroke became a mercenary soon after the experiment and rapidly gained a reputation as one of the world's greatest assassins. Following his defeat and incarceration at the hands of Batman, Deathstroke escaped from the maximum security wing of Blackgate Prison and worked as an ally of Scarecrow and the Arkham Knight, serving as an advisor and overseer of their siege of Gotham and campaign to defeat Batman both mentally and physically, unmask him and turn Gotham City into a city of fear, specifically. After the Arkham Knight was defeated, Deathstroke replaced him and took his place as commander of the Militia and Scarecrow's second-in-command. Deathstroke appeared as a supporting antagonist and one of Black Mask's 8 assassins in Batman: Arkham Origins and a appeared as a Most Wanted antagonist in Batman: Arkham Knight, but after the Arkham Knight became an anti-hero in the end, Deathstroke took over the Militia and was revealed as the tertiary antagonist.",
+    "Image": "../Images/BatmanArkhamOriginsDeathStroke.jpg"
+  },
+  {
+    "id": 30,
+    "name": "Mr Freeze",
+    "lastName": "Fries",
+    "RealName": "Victor Fries",
+    "Role": "Villian",
+    "isVisible": true,
+    "Description": "Victor Fries was a brilliant cryogenicist and former GothCorp. employee whose beloved wife, Nora, was stricken with a fatal degenerative disease. Fries placed Nora in suspended animation while he obsessively searched for a way to cure her, but the corporation that funded his research - and Nora's life - pulled the plug, and triggered an accident that transformed Fries' body into a cold-blooded form that must always be kept at absolute zero. At normal room temperature, he would die.",
+    "Image": "../Images/BatmanArkhamCityMrFreeze.jpg"
+  },
+  {
+    "id": 31,
+    "name": "Two Face Gange",
+    "Role": "Villain",
+    "isVisible": true,
+    "Description": "The goons were loyal to their boss and would protect him at a moment's notice, but at times, Two-Face would kill his own men for failure or insubordination.",
+    "Image": "../Images/BatmanArkhamCityTwofaceGang.jpg"
+  },
+  {
+    "id": 32,
+    "name": "Penguin Gang",
+    "Role": "Villain",
+    "isVisible": true,
+    "Description": "Unlike Joker's Henchmen or even Two-Face's Gang, Penguin's Henchmen were perhaps the most hostile and skilled of the gangs. That was because Penguin's gang was comprised of some of the toughest and hardest criminals in Gotham City who honed their skills in Penguin's Gladiator Pits or some of them were actually professional mercenaries that were hired and selected by Penguin himself.",
+    "Image": "../Images/BatmanArkhamCityPenguinGang.jpg"
+  },
+  {
+    "id": 33,
+    "name": "Joker Gang",
+    "Role": "Villain",
+    "isVisible": true,
+    "Description": "The Joker Gang, later known as Harley Quinn's Gang after Joker's demise, were a major and main antagonistic faction in the Arkham series. Many of the members are former members of Black Mask's Criminal Empire, who converted to Joker after he usurped Black Mask during the Christmas Eve incident.",
+    "Image": "../Images/BatmanArkhamCityJokerGang.jpg"
+  },
+  {
+    "id": 34,
+    "name": "origins",
+    "isVisible": false,
+    "DefaultImage": "../Images/Secret.jpg",
+    "Image": "../Images/BatmanArkhamOriginsBatmanGargoyle.jpg"
+  },
+  {
+    "id": 35,
+    "name": "Quincy",
+    "isVisible": true,
+    "Role": "Civilian",
+    "lastName": "Sharp",
+    "RealName": "Quincy Ulysses Sharp",
+    "Description": "Quincy Sharp was the Warden on Arkham Island and Mayor of Gotham City during the Arkham City era. Though he was seemingly a trustworthy authority figure, he was a covert serial killer and a puppet to Professor Hugo Strange, with both men sharing a connection to a powerful criminal organization using them for their own operations.",
+    "Image": "../Images/BatmanArkhamCityQuincySharp.png"
+  },
+  {
+    "id": 36,
+    "name": "Copperhead",
+    "lastName": "Unknown",
+    "RealName": "Unknown",
+    "isVisible": true,
+    "Role": "Villain",
+    "Description": "Copperhead was an expert escape artist and an assassin who was apparently a gang member from a Central American drug cartel who worked as a contract killer. She appeared to have advanced combat techniques and possessed many reptilian features, such as her forked tongue, slit pupils, and venomous talons.",
+    "Image": "../Images/BatmanArkhamOriginsCopperHead.png"
+  },
+  {
+    "Images": []
+  },
+  {
+    "Images": []
+  },
+  {
+    "Images": []
+  },
+  {
+    "Images": []
+  },
+  {
+    "userAccount": []
+  },
+  {
+    "userAccount": []
+  },
+  {
+    "userAccount": []
+  },
+  {
+    "userAccount": []
+  },
+  {
+    "userAccount": []
+  }
+]
