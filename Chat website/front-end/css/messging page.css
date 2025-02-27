@@ -1,0 +1,14 @@
+#tweetBox {
+    text-align: left;
+    width: 400px;
+    height: 200px;
+    white-space: pre-wrap;
+    resize: none;
+}
+
+li {
+
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
