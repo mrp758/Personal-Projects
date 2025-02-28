@@ -20,7 +20,6 @@ app.use(cookieParser());
 
 
 // Load front-end stuff
-app.engine('html', require('ejs').renderFile);
 app.use('/pages', express.static(path.join(__dirname.slice(0, 25), 'front-end', 'pages')));
 app.use('/js-scripts', express.static(path.join(__dirname.slice(0, 25), 'front-end', 'js-scripts')));
 app.use('/css', express.static(path.join(__dirname.slice(0, 25), 'front-end', 'css')));
@@ -66,13 +65,13 @@ mongoose.connect(process.env.MONGO_CONNECTION)
 
 
 app.get('/', async function(req,res){
-        res.render(__dirname.slice(0,25) + "/front-end/pages/index.html");
+        res.sendFile(__dirname.slice(0,25) + "/front-end/pages/index.html");
   });
 
 
 
 app.get('/create-account', async function(req,res){
-    res.render(__dirname.slice(0,25) + "/front-end/pages/register.html");
+    res.sendFile(__dirname.slice(0,25) + "/front-end/pages/register.html");
   });
 
 
@@ -80,7 +79,7 @@ app.get('/create-account', async function(req,res){
 
 
 app.get("/messging-page",isAuthenticated,async function(req,res) {
-    res.render(__dirname.slice(0,25) + "/front-end/pages/messging page.html");
+    res.sendFile(__dirname.slice(0,25) + "/front-end/pages/messging page.html");
 });
 
 
