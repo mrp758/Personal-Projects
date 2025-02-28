@@ -8,7 +8,10 @@ document.addEventListener('DOMContentLoaded', async function() {
     const chatButton = document.getElementById("ChatBtn");
     const username = document.getElementById("LoginU");
     const password = document.getElementById("LoginP");
+    const loggedCurrentUser = localStorage.getItem("currentLoggedUser");
     let onError;
+
+
 
     registerButton.addEventListener("click", async function(){
 
@@ -19,11 +22,16 @@ document.addEventListener('DOMContentLoaded', async function() {
     loginButton.addEventListener("click", async function(){
 
             const checkError = await verfyAccount(username.value,password.value);
+
+            if(checkError != true){
+                localStorage.setItem("currentLoggedUser",username.value);
+            }
             
 
-            if(onError != null && checkError != true){
+           else if(onError != null && checkError != true){
                     onError.remove();
                     onError = null;
+                    localStorage.setItem("currentLoggedUser",username.value);
                     username.value  = "";
                     password.value  = "";
                 }
@@ -37,10 +45,12 @@ document.addEventListener('DOMContentLoaded', async function() {
                 username.value  = "";
                 password.value  = "";
             }
+            username.value  = "";
+            password.value  = "";
         });
 
         chatButton.addEventListener("click",function(){
-            window.location.href = `/messging-page?username=${encodeURIComponent(username.value)}`;
+            window.location.href = `/messging-page?username=${encodeURIComponent(loggedCurrentUser)}`;
         });
 
 
