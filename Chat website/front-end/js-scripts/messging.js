@@ -108,6 +108,7 @@ const currentUser = window.location.href.split("=")[1];
 
         logOut.addEventListener("click",function(){
             window.location.href = "/logOut";
+            localStorage.clear();
 
         });
         
