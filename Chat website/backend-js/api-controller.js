@@ -1,7 +1,6 @@
 const app = require('express')();
 const bodyParser = require('body-parser');
 const express = require("express");
-const cors = require("cors");
 const session = require("express-session");
 const cookieParser = require('cookie-parser');
 const path = require('path');
@@ -15,7 +14,6 @@ const port = 5000;
 
 
 app.use(bodyParser.json());
-app.use(cors());
 app.use(cookieParser());
 
 
