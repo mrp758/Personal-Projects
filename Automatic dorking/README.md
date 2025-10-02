@@ -31,4 +31,4 @@ This project is provided for educational and research purposes only. You must ob
 
 <strong>Disclaimer</strong>
 
-This tool is uses 4get API web, You can change the web API as you see fit. But if you want to keep using the current API please read the <a href="https://4get.ca/api.txt">Terms Of Service of 4get.ca web API</a>.
+This tool is uses 4get API web, You can change the web API as you see fit. If you want to keep using the current API please read the <a href="https://4get.ca/api.txt">Terms Of Service of 4get.ca web API</a> and also note that it requires a cookie to use to avoid bot abuse on the server.
