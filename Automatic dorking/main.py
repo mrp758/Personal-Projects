@@ -20,7 +20,7 @@ def greet_user():
         if char == '-d':
             sorted_values['domain'] = extract[index+1]
         elif char == '-c':
-            sorted_values['category'] = extract[index+1]
+            sorted_values['category'] = extract[index+1].lower()
         elif char == '-e':
             sorted_values['search_engine'] = extract[index+1].lower()
         elif char == '-l':
