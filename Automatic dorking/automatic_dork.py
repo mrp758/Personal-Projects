@@ -31,7 +31,7 @@ def generate_dorks(target_domain,category,custom_file_dork=None):
 
 
 
-def dork(dorked_list,search_engine_selectted,output_file=None):
+def dork(dorked_list,search_engine_selectted=None,output_file=None):
     delay = 1.0 
     jitter = 0.6 
     cookies = {'pass': 'Your cookie ID'}
@@ -41,7 +41,14 @@ def dork(dorked_list,search_engine_selectted,output_file=None):
     #Add more search engines if needed
     try:
         for item in dorked_list:
-            if search_engine_selectted == "google":
+            if search_engine_selectted == None:
+                response = session.get(f"{GOOGLE_SEARCH_BASE_URL}",params={"s":f"{item}"},cookies=cookies,timeout=30)
+                data = response.json()
+                array_of_results.append(data)
+                sleep_for = delay + random.random() * jitter
+                time.sleep(sleep_for)
+
+            elif search_engine_selectted == "google":
                 response = session.get(f"{GOOGLE_SEARCH_BASE_URL}",params={"s":f"{item}"},cookies=cookies,timeout=30)
                 data = response.json()
                 array_of_results.append(data)
