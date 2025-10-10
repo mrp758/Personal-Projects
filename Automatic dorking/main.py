@@ -6,13 +6,13 @@ def greet_user():
 
  
     print("Options\n")
-    print("-d domain name")
-    print("-c category\n 1. only domain name\n2.domain name on github (any traces)")
+    print("-d domain name\n")
+    print("-c category 1. only domain name 2. domain name on github (any traces)\n")
     print("-l:  Filename with list of dorks (defaults to ListOfDorks.csv in current folder)\n")
-    print("-e: Select search engine for dorking\n")
+    print("-e: Select search engine for dorking (Default is google engine)\n")
     print("-f: File output (Optional)\n")
-
-    user_input = input("Enter here ex: -d example.com -e duckduckgo -l myfile.txt: ")
+    print("Example usage: -d example.com -e duckduckgo -l myfile.txt\n")
+    user_input = input("Enter here: ")
     extract = user_input.lower().split()
     sorted_values = {}
 
@@ -28,6 +28,5 @@ def greet_user():
         elif char == '-f':
            sorted_values['output_file'] = extract[index+1]
     return sorted_values
-
 
 
