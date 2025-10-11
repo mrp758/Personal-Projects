@@ -6,6 +6,7 @@ import json
 import random
 
 
+
 def generate_dorks(target_domain,category,custom_file_dork=None):
     dorked_domain = []
     try:
@@ -31,7 +32,7 @@ def generate_dorks(target_domain,category,custom_file_dork=None):
 
 
 
-def dork(dorked_list,search_engine_selectted=None,output_file=None):
+def dork(dorked_list,include_raw_json,output_file=None,search_engine_selectted=None):
     delay = 1.0 
     jitter = 0.6 
     cookies = {'pass': 'Your cookie ID'}
@@ -41,7 +42,7 @@ def dork(dorked_list,search_engine_selectted=None,output_file=None):
     #Add more search engines if needed
     try:
         for item in dorked_list:
-            if search_engine_selectted == None:
+            if search_engine_selectted not in ["google","duckduckgo","yandex","startpage"]:
                 response = session.get(f"{GOOGLE_SEARCH_BASE_URL}",params={"s":f"{item}"},cookies=cookies,timeout=30)
                 data = response.json()
                 array_of_results.append(data)
@@ -76,16 +77,21 @@ def dork(dorked_list,search_engine_selectted=None,output_file=None):
                 sleep_for = delay + random.random() * jitter
                 time.sleep(sleep_for)
 
-        if output_file not in[""," ",None]:
+        if output_file not in[""," ",None] and include_raw_json == "yes":
             json_text = "[" + ",".join(json.dumps(item,indent=4) for item in array_of_results) + "]"
             with open(output_file,"w") as file_writer:
                 file_writer.write(json_text)
+
+        elif output_file not in ["", " ", None] and include_raw_json == "no":
+            with open(output_file, "w") as file_writer:
+                for outer_elements in array_of_results:
+                    if outer_elements['web'] != []:
+                        for inner_elements in outer_elements['web']:
+                            file_writer.write(inner_elements['url'] + "\n")
+                    else:
+                        pass
         else:
             return array_of_results
     
     except Exception as error:
         return error
-
-
-
-
