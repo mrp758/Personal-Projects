@@ -7,12 +7,6 @@ A Python tool that demonstrates, at a code level it simulates how an attacker ca
 
 
 
-<strong>Requirements</strong>
-
-<strong>Install dependencies using:</strong>
-
-<code>pip install -r requirements.txt</code>
-
 <strong>Run The Tool</strong>
 
 <code>python create_encrpytion.py</code>
