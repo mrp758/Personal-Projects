@@ -5,11 +5,11 @@ import os
 
 class Create_Encrpytion():
 
-    def __init__(self,folder_path,attacker_path):
+    def __init__(self,folder_path,simulation_output_path):
 
         self.folder_path = folder_path
 
-        self.attacker_path = attacker_path
+        self.simulation_output_path = simulation_output_path
 
         self.folder_files_list = os.listdir(folder_path)
 
@@ -55,7 +55,7 @@ class Create_Encrpytion():
 
             for filename,contents in self.file_contents_copy.items():
 
-                    with open(os.path.join(self.attacker_path,filename),mode="w") as file:
+                    with open(os.path.join(self.simulation_output_path,filename),mode="w") as file:
 
                         file.write(contents)
 
