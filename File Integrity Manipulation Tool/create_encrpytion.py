@@ -38,7 +38,7 @@ class Create_Encrpytion():
     
 
 
-    def copy_to_attacker_hub(self):
+    def simulate_exfiltration(self):
 
         try:
             for filename in self.folder_files_list:
@@ -98,6 +98,6 @@ start = Create_Encrpytion(os.path.join(os.getcwd(),"folder"),os.path.join(os.get
 
 start.read_file_contents()
 
-start.copy_to_attacker_hub()
+start.simulate_exfiltration()
 
 start.create_encrpytion_base64_and_hash()
