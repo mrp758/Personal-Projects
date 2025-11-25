@@ -94,7 +94,7 @@ class Create_Encrpytion():
         
 
 
-start = Create_Encrpytion(os.path.join(os.getcwd(),"folder"),os.path.join(os.getcwd(),"enter_path"))
+start = Create_Encryption(os.path.join(os.getcwd(),"folder"),os.path.join(os.getcwd(),"enter_path"))
 
 start.read_file_contents()
 
