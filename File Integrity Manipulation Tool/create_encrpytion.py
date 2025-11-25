@@ -34,7 +34,7 @@ class Create_Encrpytion():
             
             except Exception as reading_file_contents_error:
 
-                return reading_file_contents_error
+                 return f"Exception occured while reading file in function read_file_contents details as following: {reading_file_contents_error}"
     
 
 
@@ -49,7 +49,7 @@ class Create_Encrpytion():
 
         except Exception as reading_file_contents_error:
 
-                return reading_file_contents_error
+                return f"Exception occured while reading file in function simulate_exfiltration details as following:  {reading_file_contents_error}"
 
         try:
 
@@ -61,7 +61,7 @@ class Create_Encrpytion():
 
         except Exception as writing_contents_file_error:
 
-                return writing_contents_file_error
+                return f"Exception occured while writing to file in function simulate_exfiltration details as following:  {writing_contents_file_error}"
         
 
 
@@ -90,11 +90,11 @@ class Create_Encrpytion():
 
         except Exception as encrpytion_creation_error:
 
-            return encrpytion_creation_error
+            return f"Exception occured while creating encrpytion to file in function create_encrpytion_base64_and_hash details as following:  {encrpytion_creation_error}"
         
 
 
-start = Create_Encryption(os.path.join(os.getcwd(),"folder"),os.path.join(os.getcwd(),"enter_path"))
+start = Create_Encryption(os.path.join(os.getcwd(),"enter_target_path"),os.path.join(os.getcwd(),"enter_simulate_exfiltration_path"))
 
 start.read_file_contents()
 
