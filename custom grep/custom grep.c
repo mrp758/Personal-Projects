@@ -88,7 +88,7 @@ char arrayOfStrings(char * stringsFromFile, char array[][256]){
 char returnStrings(int indexPosition,char content[][256], char * foundStrings[], char * phrase){
     int indexStr = 0, match=0, lengthOfPhrase = strlen(phrase);
     char string[25];
-    int indexStrF=0,indexPostF=0;
+    int indexPostF=0;
     
        for(int i=0; i <= indexPosition; i++){
 
