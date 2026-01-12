@@ -23,7 +23,7 @@ char returnStringsViaSpecialChars(int indexPosition,char content[][MAX_CHARS], c
 int main(){
 
     char content[MAX_WORDS][MAX_CHARS] = {0};
-    char fileName[] = "grep_test.txt";
+    char fileName[] = "YOUR FILE HERE";
     char phrase[] = "!";
     char * tempStore = NULL;
     char * foundStrings[MAX_CHARS] = {0};
