@@ -3,11 +3,15 @@
 #include <string.h>
 #include <ctype.h>
 
+#define MAX_CHARS 256
+#define MAX_WORDS 10
+
+
 
 char readFile(char ** tempStore,char* fileName);
-char arrayOfStrings(char * stringsFromFile, char array[][256]);
-char returnStrings(int indexPosition,char content[][256], char * foundStrings[], char * phrase);
-char returnStringsViaSpecialChars(int indexPosition,char content[][256], char * foundStrings[], char * phrase);
+char arrayOfStrings(char * stringsFromFile, char array[][MAX_CHARS]);
+char returnStrings(int indexPosition,char content[][MAX_CHARS], char * foundStrings[], char * phrase);
+char returnStringsViaSpecialChars(int indexPosition,char content[][MAX_CHARS], char * foundStrings[], char * phrase);
 
 
 // This is ANSI usage in C
@@ -18,17 +22,17 @@ char returnStringsViaSpecialChars(int indexPosition,char content[][256], char * 
 
 int main(){
 
-    char content[10][256] = {0};
-    char fileName[] = "your_file_name";
-    char phrase[] = "your word/special character";
-    char string[25];
+    char content[MAX_WORDS][MAX_CHARS] = {0};
+    char fileName[] = "grep_test.txt";
+    char phrase[] = "!";
     char * tempStore = NULL;
-    char * foundStrings[256] = {0};
+    char * foundStrings[MAX_CHARS] = {0};
     readFile(&tempStore,fileName);
     int indexPosition = arrayOfStrings(tempStore,content);
     int indexStr = 0, match=0, lastPos=0, lengthOfPhrase = strlen(phrase);
     returnStrings(indexPosition,content,foundStrings,phrase);
     returnStringsViaSpecialChars(indexPosition,content,foundStrings,phrase);
+    free(tempStore);
     
     
   
@@ -66,7 +70,7 @@ char readFile(char ** readContents,char * fileName){
 
 
 
-char arrayOfStrings(char * stringsFromFile, char array[][256]){
+char arrayOfStrings(char * stringsFromFile, char array[][MAX_CHARS]){
     int indexStr=0,indexPost=0;
     for(int index=0; index < strlen(stringsFromFile); index++){
         if(stringsFromFile[index] == '\n'){
@@ -85,24 +89,22 @@ char arrayOfStrings(char * stringsFromFile, char array[][256]){
 }
 
 
-char returnStrings(int indexPosition,char content[][256], char * foundStrings[], char * phrase){
+char returnStrings(int indexPosition,char content[][MAX_CHARS], char * foundStrings[], char * phrase){
     int indexStr = 0, match=0, lengthOfPhrase = strlen(phrase);
     char string[25];
-    int indexPostF=0;
+    int indexStrF=0,indexPostF=0;
     
        for(int i=0; i <= indexPosition; i++){
-
         if(strlen(content[i]) > 0){
             indexStr=0;
             memset(string, '\0', 25);
 
         for(int j=0; j < strlen(content[i]); j++){
-
             string[indexStr] = content[i][j];
             indexStr++;
             string[indexStr] = '\0';
 
-            if(strlen(string) == strlen(phrase)  && strcmp(string,phrase)==0){
+            if(strlen(string) == strlen(phrase)  && strcmp(string,phrase)==0){ 
                 foundStrings[indexPostF] = content[i];
                 indexPostF++;
             }
@@ -127,7 +129,7 @@ char returnStrings(int indexPosition,char content[][256], char * foundStrings[],
 }
 
 
-char returnStringsViaSpecialChars(int indexPosition,char content[][256], char * foundStrings[], char * phrase){
+char returnStringsViaSpecialChars(int indexPosition,char content[][MAX_CHARS], char * foundStrings[], char * phrase){
 
     int indexStr = 0, match=0, lengthOfPhrase = strlen(phrase);
     int indexPostF = 0;
@@ -144,7 +146,7 @@ char returnStringsViaSpecialChars(int indexPosition,char content[][256], char * 
                 indexStr++;
                 string[indexStr] = '\0';
                 
-                if(strlen(string) == strlen(phrase) && ispunct(content[i][j]) && strcmp(string,phrase)==0){
+                if(strlen(string) == strlen(phrase) && strcmp(string,phrase)==0){
                         foundStrings[indexPostF] = content[i];
                         indexPostF++;
                 }
