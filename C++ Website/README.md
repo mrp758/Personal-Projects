@@ -4,16 +4,10 @@ Simple website made with only C++ with no Javascript & Node :D
 
 The purpose of me creating this project, Is for awareness for new programmers & software engineers that with a little bit of effort and a lot of imagination you can create solid website that dosen't require that much (In terms of computer memory & few dependencies) sometimes all you need is love for compilers & sockets :D.
 
-<code>Please be aware of the following code: </code>
 
-<code>snprintf(buffer,sizeof(buffer),"SELECT * FROM PERSON where name='%s'",userQuery.c_str()); - This is sql injection with no effort, e.g name='' or 1=1 -- ' </code>
+<code>Because its a simple project dosen't mean Security needs to be looked over, So adding 'Safe Queries' makes 'Bad hackers fly away' :S .</code>
 
-<code>By injecting ' you escape that query and do bad stuff :D </code>
-
-
-<code>Because its a simple project I didn't put to much effort to make 'Safe Queries'.</code>
-
-<code><strong> BUT if you interested the project to larger dimensions fix this. SQLite3 has a whole documentation on 'Safe Queries' <a href="https://sqlite.org/c3ref/bind_blob.html">HERE</a></code>
+<code><strong> BUT if you interested the project to larger dimensions. SQLite3 has a whole documentation on 'Safe Queries' that can be beneficial for more complex queries too! <a href="https://sqlite.org/c3ref/bind_blob.html">HERE</a></code>
 
 
 
