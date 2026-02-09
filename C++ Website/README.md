@@ -13,7 +13,7 @@ The purpose of me creating this project, Is for awareness for new programmers & 
 
 <code>Because its a simple project I didn't put to much effort to make 'Safe Queries'.</code>
 
-<code><strong> BUT if you interested the project to larger dimensions fix this. SQLite3 has a whole documentation on 'Safe Queries' <a href="https://sqlite.org/c3ref/bind_blob.html">here</a></code>
+<code><strong> BUT if you interested the project to larger dimensions fix this. SQLite3 has a whole documentation on 'Safe Queries' <a href="https://sqlite.org/c3ref/bind_blob.html">HERE</a></code>
 
 
 
