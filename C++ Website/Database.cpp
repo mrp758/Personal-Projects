@@ -19,9 +19,7 @@ void Database::setQuery(const std::string &userQuery){
 
             else{
                 
-                snprintf(buffer,sizeof(buffer),"SELECT * FROM PERSON where name='%s'",userQuery.c_str());
-
-                query = buffer;
+               query = "SELECT * FROM PERSON WHERE name = ?";
             }
 }
 
@@ -100,47 +98,40 @@ int Database::holdResultFromDB(void* data,int numberOfResultsFromQuery, char** a
         return 0;
     }
 
-void Database::readData(std::string &name, std::string &surname, std::string &age , std::string &address , std::string &salary){
+bool Database::readData(const std::string &userQuery,std::string &name, std::string &surname, std::string &age , std::string &address , std::string &salary) {
 
-        std::vector<std::string> users;
+    sqlite3_stmt* stmt;
 
-        detectError = sqlite3_exec(DB, getQuery().c_str(),holdResultFromDB, &users, &errorMessage);
+    int detectError = sqlite3_prepare_v2(DB, query.c_str(), -1, &stmt, nullptr);
 
-            if(detectError != SQLITE_OK){
+    if(detectError != SQLITE_OK){
 
-                std::cout << "Something went wrong " << errorMessage << std::endl;
-            }
+        std::cerr << "Failed to prepare statement: " << sqlite3_errmsg(DB) << std::endl;
 
-             
-           for (int i = 0; i < users.size(); ++i) {
-      
-                if (i == 0){
+        return false;
+    }
 
-                    name += users[i];
-                }
+    sqlite3_bind_text(stmt, 1, userQuery.c_str(), -1, SQLITE_TRANSIENT);
 
-                else if(i == 1){
+    
+    int columnCount = sqlite3_column_count(stmt);
 
-                    surname += users[i];
-                }
+    int step = sqlite3_step(stmt);
 
-                else if(i == 2){
+    if(step == SQLITE_ROW) {
+        
+        name    = reinterpret_cast<const char*>(sqlite3_column_text(stmt, 1));
+        surname = reinterpret_cast<const char*>(sqlite3_column_text(stmt, 2));
+        age     = reinterpret_cast<const char*>(sqlite3_column_text(stmt, 3));
+        address = reinterpret_cast<const char*>(sqlite3_column_text(stmt, 4));
+        salary  = reinterpret_cast<const char*>(sqlite3_column_text(stmt, 5));
 
-                    age += users[i];
-                }
+    }
 
-                 else if(i == 3){
+    sqlite3_finalize(stmt);
+    return true;
+}
 
-                    address += users[i];
-                }
-
-                else{
-                    
-                    salary += users[i];
-                }
-            }
-
-        }
 
 
 
