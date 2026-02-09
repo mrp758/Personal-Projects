@@ -2,7 +2,7 @@
 #include <sqlite3.h>
 #include <iostream>
 #include <vector>
-#include "Database.h"
+#include "aDatabase.h"
 
 
 
@@ -98,7 +98,7 @@ int main() {
 
         dataBaseObject.openDB();
         dataBaseObject.setQuery(inputToQuery);
-        dataBaseObject.readData(name,surname,age,address,salary);
+        dataBaseObject.readData(inputToQuery,name,surname,age,address,salary);
         dataBaseObject.closeDB();
 
         htmlGenerator(htmlContent,&name,&surname,&age,&address,&salary);
@@ -106,6 +106,6 @@ int main() {
         
     });
 
-    server.listen("127.0.0.1", 5000);
+    server.listen("YOUR IP", "YOUR PORT NUMBER");
 }
 
