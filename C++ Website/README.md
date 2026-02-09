@@ -4,7 +4,7 @@ Simple website made with only C++ with no Javascript & Node :D
 
 The purpose of me creating this project, Is for awareness for new programmers & software engineers that with a little bit of effort and a lot of imagination you can create solid website that dosen't require that much (In terms of computer memory).
 
-<code>Please be aware of the following code: 
+<code>Please be aware of the following code
 
 snprintf(buffer,sizeof(buffer),"SELECT * FROM PERSON where name='%s'",userQuery.c_str()); - This is sql injection with no effort, e.g name='' or 1=1 -- ' <--- By injecting ' you escape that query and do bad stuff :D 
 
