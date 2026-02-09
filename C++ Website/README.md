@@ -10,9 +10,9 @@ snprintf(buffer,sizeof(buffer),"SELECT * FROM PERSON where name='%s'",userQuery.
 
 Because its a simple project I didn't put to much effort to make 'Safe Queries'.
 
-<strong> BUT if you interested the project to larger dimensions fix this. SQLite3 has a whole documentation on 'Safe Queries' <a href="https://sqlite.org/c3ref/bind_blob.html">here</a>
-
 </code>
+
+<strong> BUT if you interested the project to larger dimensions fix this. SQLite3 has a whole documentation on 'Safe Queries' <a href="https://sqlite.org/c3ref/bind_blob.html">here</a>
 
 
 <strong>This project was inspired by <a href="https://github.com/tsoding">Zozin better known as Tsoding in social media</a></strong>
