@@ -15,11 +15,9 @@ The purpose of me creating this project, Is for awareness for new programmers & 
 
 <strong>This project was inspired by <a href="https://github.com/tsoding">Zozin better known as Tsoding in social media</a></strong>
 
-Richard Stallman – Free Software Song
+<strong>Richard Stallman</strong>
 
-<strong>Richard Stallman Free software Song</strong>
-
-<a href="https://youtu.be/9sJUDx7iEJw?si=orF70yY8vHPy3Ote">Free Software</a>
+<a href="https://youtu.be/9sJUDx7iEJw?si=orF70yY8vHPy3Ote">Free software Song</a>
 
 
 <strong>The idea that software can be simple, transparent, and educational. Is key for future programmers & sotfware engineers to create new things with quality and understanding on whats going on under the hood of things! </strong>
