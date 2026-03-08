@@ -14,7 +14,7 @@ curl -H "Authorization: Bearer <YOUR_TOKEN>" http://localhost:8000/api/v1/produc
 
 curl -H "Authorization: Bearer <YOUR_TOKEN>" http://localhost:8000/api/v1/products/<product id> - single product
 
-curl -X POST "http://localhost:8000/api/v1/products/123e4567-e89b-12d3-a456-426614174000/purchase?reseller_price=50" \
+curl -X POST "http://localhost:8000/api/v1/products/<YOUR_PRODUCTID>/purchase?reseller_price=50" \
      -H "Authorization: Bearer <YOUR_TOKEN>" - To purchase the item at lower/minimum sell price
 
 <strong> The rest of the end points are used with html pages and javascript files to make UI and fetching information </strong>
