@@ -1,0 +1,36 @@
+version: "29.2.1"
+
+services:
+  db:
+    image: mysql:8
+    container_name: marketplace-db
+    environment:
+      MYSQL_ALLOW_EMPTY_PASSWORD: "yes"      # Change this if you want
+      MYSQL_DATABASE: market_place
+    ports:
+      - "3306:3306"
+    volumes:
+      - db_data:/var/lib/mysql
+      - ./init.sql:/docker-entrypoint-initdb.d/init.sql:ro
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost"]
+      interval: 5s
+      retries: 5
+      start_period: 10s
+
+  app:
+    build: .
+    container_name: marketplace-api
+    ports:
+      - "8000:8000"
+    depends_on:
+      db:
+        condition: service_healthy
+    environment:
+      MYSQL_HOST: db
+      MYSQL_USER: root
+      MYSQL_PASSWORD: ""
+      MYSQL_DB: market_place
+
+volumes:
+  db_data:

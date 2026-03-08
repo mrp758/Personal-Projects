@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin page</title>
+</head>
+<body>
+    <form action="/admin/products" method="GET">
+    <input type="submit" value="Get products">
+</form>
+<form action="/admin/create-product" method="POST">
+  <label for="product_name">Enter Product Name</label><br>
+  <input type="text" name="product_name" placeholder="Product name"><br><br>
+  <label for="description">Enter Description</label><br>
+  <input type="text" name="description" placeholder="Description"><br><br>
+  <label for="product_type">Enter Product Type</label><br>
+  <input type="text" name="product_type" placeholder="Product type"><br><br>
+  <label for="image_url">Enter Image Url</label><br>
+  <input type="text" name="image_url" placeholder="Image URL"><br><br>
+  <input type="submit" value="Create Item">
+</form>
+
+<form id="deleteForm">
+  <label>Enter Product ID</label><br>
+  <input type="text" id="productID" placeholder="Delete Item"><br>
+  <button type="submit">Delete Item</button>
+</form>
+
+<form id="patchForm">
+  <label>Enter Product ID</label><br> 
+  <input type="text" id="table_name" placeholder="Table Name"><br>
+  <input type="text" id="column_name" placeholder="Column Name"><br>
+  <input type="text" id="product_id" placeholder="Product ID"><br>
+  <input type="text" id="current_column_value" placeholder="Current Column Value"><br>
+  <input type="text" id="new_column_value" placeholder="New Column Value"><br>
+  <button type="submit">Update Item</button>
+</form>
+
+</body>
+<script src="/static/javascript/adminFunctions.js"></script>
+</html>
