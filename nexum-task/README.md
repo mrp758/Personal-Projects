@@ -18,3 +18,5 @@ curl -X POST "<DOCKER_BASE_URL>/api/v1/products/<YOUR_PRODUCTID>/purchase?resell
      -H "Authorization: Bearer <YOUR_TOKEN>" - To purchase the item at lower/minimum sell price
 
 <strong> The rest of the end points are used with html pages and javascript files to make UI and fetching information </strong>
+
+<DOCKER_BASE_URL>/static/html-pages/<HTML-Page> - example path to access any of the front end pages for costumer and admin
