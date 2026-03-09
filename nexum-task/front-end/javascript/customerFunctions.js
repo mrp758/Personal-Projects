@@ -7,13 +7,13 @@ async function handlePurchase(productId) {
         if (!response.ok) {
         const error = await response.json();
         localStorage.setItem("errorData", JSON.stringify(error));
-        window.location.href = "/static/html pages/errorPage.html";
+        window.location.href = "/static/html-pages/errorPage.html";
         }
 
         
         const returnedData = await response.json();
         localStorage.setItem("purchaseData", JSON.stringify(returnedData));
-        window.location.href = "/static/html pages/checkoutPage.html";
+        window.location.href = "/static/html-pages/checkoutPage.html";
 
 }
 
