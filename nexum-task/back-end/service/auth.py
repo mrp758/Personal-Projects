@@ -37,6 +37,10 @@ class authenticate_user():
         data.append(object_to_json)
         with open("jwt_keys_file.json","w") as file:
             json.dump(data,file,ensure_ascii=False, indent=4)
+
+    def update_jwt_file(self, data):
+        with open("jwt_keys_file.json", "w") as file:
+            json.dump(data, file, ensure_ascii=False, indent=4)
     
     def cleanup_expired_sessions(self):
         data = self.read_jwts_file()
@@ -44,11 +48,9 @@ class authenticate_user():
         filtered_data = []
         for item in data:
             exp = item.get("exp")
-            if isinstance(exp, str):
-                exp = datetime.fromisoformat(exp).timestamp()
             if exp > now:
                 filtered_data.append(item)
-        self.write_to_jwts_file(filtered_data)
+        self.update_jwt_file(filtered_data)
 
     
     def create_access_token(self,user_object):
