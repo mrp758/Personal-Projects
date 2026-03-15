@@ -3,7 +3,7 @@
 document.getElementById("getProductForm").addEventListener("submit", async function(event){
   event.preventDefault();
    let userToken =  JSON.parse(sessionStorage.getItem("token"));
-   const response = await  fetch("http://127.0.0.1:8000/admin/products/",{
+   const response = await  fetch("URL-PATH/admin/products/",{
       method: "GET",
        headers: {
         'Content-Type': 'application/json',
@@ -26,7 +26,7 @@ document.getElementById("createProduct").addEventListener("submit", async functi
   formData.append("product_type", document.getElementById("productType").value);
   formData.append("image_url", document.getElementById("imageUrl").value);
 
-  const response = await fetch("http://127.0.0.1:8000/admin/create-product", {
+  const response = await fetch("URL-PATH/admin/create-product", {
   method: "POST",
   body: formData,
   headers: {
@@ -56,7 +56,7 @@ document.getElementById("deleteForm").addEventListener("submit", async function(
   event.preventDefault();
   let userToken =  JSON.parse(sessionStorage.getItem("token"));
   const productId = document.getElementById("productID").value;
-  const response = await fetch(`http://127.0.0.1:8000/admin/delete-product/${productId}`, {
+  const response = await fetch(`URL-PATH/admin/delete-product/${productId}`, {
   method: "DELETE",
   headers: {
         'Authorization': `${userToken.token_type} ${userToken.access_token}`
@@ -88,7 +88,7 @@ document.getElementById("patchForm").addEventListener("submit", async function(e
   formData.append("current_column_value", document.getElementById("currentColumnValue").value);
   formData.append("new_column_value", document.getElementById("newColumnValue").value);
 
-  const response = await fetch("http://127.0.0.1:8000/admin/update-items", {
+  const response = await fetch("URL-PATH/admin/update-items", {
     method: "PATCH",
     body: formData,
     headers: {
