@@ -31,7 +31,7 @@ document.getElementById("loginForm").addEventListener("submit", async function(e
         formData.append("jwt_token",userToken["access_token"]);
       }
 
-    const response = await fetch("http://127.0.0.1:8000/login", {
+    const response = await fetch("URL-PATH/login", {
     method: "POST",
     body: formData
     });
