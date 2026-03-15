@@ -5,4 +5,4 @@ This is a fullstack project using pyhon + javascript + css & html, To showcase m
 Added the exported database to anyone who want use the project and also want to add new things.
 
 
-in Auth file SECRET_KEY - Was used by the library secrets using function token_hex().
+in Auth file SECRET_KEY - To create the value I used the library secrets using function token_hex().
