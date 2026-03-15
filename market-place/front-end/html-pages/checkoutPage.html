@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: darkgray;">
+</body>
+<script>
+
+    const purchaseData = JSON.parse(sessionStorage.getItem("purchaseData"));
+    document.body.innerText = `Coupon: ${purchaseData.coupon_value}`;
+</script>
+</html>

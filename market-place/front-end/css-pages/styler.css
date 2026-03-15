@@ -1,0 +1,100 @@
+#loginBody{
+    background-image: url("/static/images/lake.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+}
+
+#loginForm{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-top: 250px;
+}
+
+#loginForm input{
+    width: 200px;
+    padding: 8px;
+}
+
+#loginButton{
+    background-color: green;
+    border: none;
+    outline: none;
+}
+
+#loginButton:hover{
+    cursor: pointer;
+}
+
+#errorMessageLogin{
+    font-size: 25px;
+    color: black;
+    background-color: lightsteelblue;
+}
+
+
+
+
+#adminPage{
+    background-color:darkgray;
+}
+
+#productDisplayAdmin{
+    background-color: darkgray;
+    font-size: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#productTitleAdmin{
+    color:green;
+}
+
+
+.adminGrid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    padding: 40px;
+}
+
+#createProduct,#deleteForm,#patchForm,#getProductForm{
+    background: lightblue;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    
+}
+
+
+
+#getProductButton,#createProductButton,#clearFieldsCreateForm,#deleteFormButton,#patchFormButton{
+    cursor: pointer;
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #2b7cff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+#productName,#description,#productType,#imageUrl,#productID,#tableName,#columnName,#product_id,#currentColumnValue,#newColumnValue{
+    width: 750px;
+    padding: 8px;
+    margin-top: 5px;
+}
+
+
+
+#purchaseButton{
+    background-color: lightblue;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+    padding: 10px;
+}

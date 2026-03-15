@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/css-pages/styler.css">
+    <title>Admin page</title>
+</head>
+
+
+<body id="adminPage">
+  <div class="adminGrid">
+    <form id="getProductForm">
+       <label>Display All Products In The Store</label><br>
+    <input id="getProductButton" type="submit" value="Get products">
+</form>
+<form id="createProduct">
+  <label>Enter Product Name</label><br>
+  <input type="text" id="productName" placeholder="Product name"><br><br>
+  <label for="description">Enter Description</label><br>
+  <input type="text" id="description" placeholder="Description"><br><br>
+  <label>Enter Product Type</label><br>
+  <input type="text" id="productType" placeholder="Product type"><br><br>
+  <label>Enter Image Url</label><br>
+  <input type="text" id="imageUrl" placeholder="Image URL"><br><br>
+  <input id="createProductButton" type="submit" value="Create Item">
+  <button id="clearFieldsCreateForm">Clear Fields</button>
+</form>
+
+<form id="deleteForm">
+  <label>Enter Product ID</label><br>
+  <input type="text" id="productID" placeholder="Delete Item"><br>
+  <input name="token"  type="hidden"/>
+  <button id="deleteFormButton" type="submit">Delete Item</button>
+</form>
+
+<form id="patchForm">
+  <label>Enter Product ID</label><br> 
+  <input type="text" id="tableName" placeholder="Table Name"><br>
+  <input type="text" id="columnName" placeholder="Column Name"><br>
+  <input type="text" id="product_id" placeholder="Product ID"><br>
+  <input type="text" id="currentColumnValue" placeholder="Current Column Value"><br>
+  <input type="text" id="newColumnValue" placeholder="New Column Value"><br>
+  <button id="patchFormButton" type="submit">Update Item</button>
+</form>
+</div>
+</body>
+<script src="/static/js-files/adminFunctions.js"></script>
+</html>
