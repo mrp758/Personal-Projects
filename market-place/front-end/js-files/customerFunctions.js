@@ -5,7 +5,6 @@ async function handlePurchase(productId) {
         });
 
         if (!response.ok) {
-        console.log("got here");
         sessionStorage.removeItem("errorData");
         const error = await response.json();
         sessionStorage.setItem("errorData", JSON.stringify(error));
