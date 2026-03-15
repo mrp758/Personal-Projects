@@ -1,6 +1,6 @@
 
 async function handlePurchase(productId) {
-         const response = await fetch(`http://127.0.0.1:8000/purchase-product/${productId}`, {
+         const response = await fetch(`URL-PATH/purchase-product/${productId}`, {
             method: "POST"
         });
 
@@ -22,7 +22,7 @@ async function handlePurchase(productId) {
 
 
 async function loadProducts() {
-    const response = await fetch("http://127.0.0.1:8000/products");
+    const response = await fetch("URL-PATH/products");
     const data = await response.json();
     const productArray = data["products"];
 
