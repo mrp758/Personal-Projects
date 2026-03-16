@@ -16,7 +16,7 @@ from repository import db_connection,db_customer,db_reseller,db_admin
 from models import base_models
 from service import auth
 
-access_to_db = db_connection.create_connection("localhost","root","","market_place")
+access_to_db = db_connection.create_connection("YOUR HOST","DB USERNAME","DB PASSWORD","market_place")
 handler_auth = auth.authenticate_user(access_to_db)
 customer_handler = db_customer.customer_db(access_to_db)
 reseller_handler = db_reseller.reseller_db(access_to_db)
